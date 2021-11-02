@@ -1,0 +1,208 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+  <title>CodePen - Portfolio</title>
+  
+  
+  
+  
+<style>
+#welcome-section{
+  background-image:linear-gradient(steelblue,lightgreen);
+  font-family:sans-serif;
+  font-weight:bold;
+  text-align:center;
+  font-size:30px;
+  margin-top:95px;
+
+  margin-left:-10px;
+  margin-right:-10px;
+  height:100vh;
+
+}
+a{
+  text-decoration:none;
+  color: white;
+  font-weight:bold;
+}
+#navbar{
+  margin: 0;
+  padding: 20px; 
+  background-color:steelblue;
+  text-align:right;
+  position:fixed;
+  top:0;
+  right:0;
+  left:0;
+  border-bottom-style:ridge;
+}
+
+#navlist{
+  list-style-type:none;
+
+}
+#divnav{
+      position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+}
+li{
+  display: inline;
+  padding: 10px;
+}
+a:hover{
+  color:black;
+}
+
+#projects{
+  background-image:linear-gradient(lightgreen, lightyellow);
+  font-family:sans-serif;
+  font-size:20px;
+  font-weight:bold;
+  text-align:center;
+  padding: 50px;
+  margin-left:-10px;
+  margin-right:-10px;
+
+}
+.project-tile{
+  width:200px;
+  height:200px;
+  border-radius:10%;
+  border:solid black;
+}
+#contact{
+  background-image:linear-gradient(lightyellow, white);
+  font-family:sans-serif;
+  font-size:20px;
+  font-weight:bold;
+  text-align:center;
+  padding: 50px;
+
+}
+.contact-link{
+  color:gray;
+}
+@media (max-width:100px){
+  #jackie{
+    font-size:12px;
+  }
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no" >
+  <body>
+<div id="divnav">
+  <nav id="navbar">
+  <ul id="navlist">
+   <li class="list"><a href="#welcome-section">About</li></a>
+   <li class="list"><a href="#projects">My Work</li></a>
+   <li class="list"><a href="#contact">Contact</li></a>
+</nav></ul></div>
+<div= id="jackie">
+<section id="welcome-section">
+  <br></br>
+  <h1>Jackie Campisi</h1>
+  <br></br>
+ <p><q><i>What's easy I already did it. What's hard I'm doing it... The impossible will take a while, but I will achieve it!</q>-Anonoymous</p></i>
+</section>
+</body>
+</div>
+
+  <section id="projects"> 
+    <p style="font-size:45px;">My Work</p>
+      <br></br>
+    <a href="https://codepen.io/jcampisi13/pen/OJgajMZ?editors=1100">
+      <img class="project-tile"
+           src="https://i.imgur.com/A5qqauv.png" 
+           alt="First project" ></a>
+    <a href="https://codepen.io/jcampisi13/pen/rNwXRBP">
+      <img class="project-tile" 
+           src="https://i.imgur.com/06Rshim.png" 
+           alt="First Technical Document"></a>
+    <a href="https://codepen.io/jcampisi13/pen/dyRryer?editors=1100">
+      <img class="project-tile"
+           src="https://i.imgur.com/Q1eupoL.png"
+           alt="First Survey Form"></a>  
+  <br></br>
+<p><q><i>You are not your resume, you are your work.</q> -Seth Godin, Author</p> </i>
+</section>
+
+<section id="contact"> <u>Contact Information</u>
+<br></br>
+    <p ><a id="profile-link" class="contact-link" target="_blank" href="https://www.freecodecamp.org/jcampisi">Free Coding Camp</a></p>
+    <p ><a id="profile-link" class="contact-link" target="_blank" href="https://www.github.com/jcampisi13">GitHub</a></p>
+    <p ><a id="profile-link" class="contact-link" target="_blank" href="https://www.linkedin.com/in/jackie-campisi-shrm-cp-phr-12164a37">LinkedIn</a></p>
+    <p ><a id="profile-link" class="contact-link" target="_blank" href="https://www.twitter.com/jackie2code613">Twitter</a></p>
+  
+  </section>
+</div>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+      <script id="rendered-js" >
+// !! IMPORTANT README:
+
+// You may add additional external JS and CSS as needed to complete the project, however the current external resource MUST remain in place for the tests to work. BABEL must also be left in place. 
+
+/***********
+INSTRUCTIONS:
+  - Select the project you would 
+    like to complete from the dropdown 
+    menu.
+  - Click the "RUN TESTS" button to
+    run the tests against the blank 
+    pen.
+  - Click the "TESTS" button to see 
+    the individual test cases. 
+    (should all be failing at first)
+  - Start coding! As you fulfill each
+    test case, you will see them go   
+    from red to green.
+  - As you start to build out your 
+    project, when tests are failing, 
+    you should get helpful errors 
+    along the way!
+    ************/
+
+// PLEASE NOTE: Adding global style rules using the * selector, or by adding rules to body {..} or html {..}, or to all elements within body or html, i.e. h1 {..}, has the potential to pollute the test suite's CSS. Try adding: * { color: red }, for a quick example!
+
+// Once you have read the above messages, you can delete all comments.
+//# sourceURL=pen.js
+    </script>
+
+  
+
+</body>
+
+</html>
+ 
