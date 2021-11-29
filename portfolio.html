@@ -1,38 +1,73 @@
 
-
 <!DOCTYPE html>
-<html lang="en" >
+<html lang='en' class=''>
 
 <head>
 
-  <meta charset="UTF-8">
-  
-<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
-<meta name="apple-mobile-web-app-title" content="CodePen">
+  <meta charset='UTF-8'>
+  <title>CodePen Demo</title>
 
-<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+  <meta name="robots" content="noindex">
 
-<link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+  <link rel="mask-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+  <link rel="canonical" href="https://codepen.io/jcampisi13/pen/jOLEYyQ?editors=1000">
 
+  
+  
 
-  <title>CodePen - Portfolio</title>
-  
-  
-  
-  
-<style>
-#welcome-section{
-  background-image:linear-gradient(steelblue,lightgreen);
+  <style class="INLINE_PEN_STYLESHEET_ID">
+    
+body{
+  background-color: black;
+  color: white;
   font-family:sans-serif;
+  font-size:20px;
+  font-weight:bold;
+  text-align:center;
+}
+#welcome-section{
+  background-color: black;
+  color:gray;
+  font-family:monospace;
   font-weight:bold;
   text-align:center;
   font-size:30px;
   margin-top:95px;
-
   margin-left:-10px;
   margin-right:-10px;
   height:100vh;
 
+}
+.typewriter{
+  font-family: monospace;
+  display:inline-block;
+}
+.typerwriter-text{
+  display: inline-block;
+  overflow:hidden;
+  letter-spacing: 2px;
+  animation: typing 8s steps(19, end), blink 1s step-end infinite;
+  wite-space:nowrap;
+  font-weight:700;
+  border-right: 4px solid orange;
+  box-sizing:border-box;
+}
+@keyframes typing{
+  from{
+    width:0%
+  }
+  to{
+    width:100%
+  }
+}
+@keyframes blink{
+  from,to{
+    border-color:transparent
+  }
+  50%{
+    border-color:red;
+  }
 }
 a{
   text-decoration:none;
@@ -42,7 +77,7 @@ a{
 #navbar{
   margin: 0;
   padding: 20px; 
-  background-color:steelblue;
+  background:linear-gradient(gray, black);
   text-align:right;
   position:fixed;
   top:0;
@@ -65,11 +100,12 @@ li{
   padding: 10px;
 }
 a:hover{
-  color:black;
+  color:gray;
 }
 
 #projects{
-  background-image:linear-gradient(lightgreen, lightyellow);
+  background-color:black;
+  color: white;
   font-family:sans-serif;
   font-size:20px;
   font-weight:bold;
@@ -86,7 +122,8 @@ a:hover{
   border:solid black;
 }
 #contact{
-  background-image:linear-gradient(lightyellow, white);
+  background:linear-gradient(black,grey);
+  color: white;
   font-family:sans-serif;
   font-size:20px;
   font-weight:bold;
@@ -102,40 +139,35 @@ a:hover{
     font-size:12px;
   }
 }
-</style>
 
-  <script>
-  window.console = window.console || function(t) {};
-</script>
+  </style>
 
   
-  
-  <script>
-  if (document.location.search.match(/type=embed/gi)) {
-    window.parent.postMessage("resize", "*");
-  }
-</script>
-
-
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeConsoleRunner-d8236034cc3508e70b0763f2575a8bb5850f9aea541206ce56704c013047d712.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
+<script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
 </head>
 
-<body translate="no" >
-  <body>
+<body>
+  <body> 
 <div id="divnav">
-  <nav id="navbar">
+  <nav id="navbar"> 
   <ul id="navlist">
    <li class="list"><a href="#welcome-section">About</li></a>
    <li class="list"><a href="#projects">My Work</li></a>
+   <li class="list"><a href="#programs">Programs</li></a>
+   <li class="list"><a href="#resume">Resume</li></a>
    <li class="list"><a href="#contact">Contact</li></a>
 </nav></ul></div>
 <div= id="jackie">
 <section id="welcome-section">
   <br></br>
-  <h1>Jackie Campisi</h1>
+  <div class="typerwriter">
+    <h1><div class="typerwriter-text">I am Jackie Campisi</div></h1></div>
   <br></br>
  <p><q><i>What's easy I already did it. What's hard I'm doing it... The impossible will take a while, but I will achieve it!</q>-Anonoymous</p></i>
 </section>
-</body>
+
 </div>
 
   <section id="projects"> 
@@ -156,7 +188,24 @@ a:hover{
   <br></br>
 <p><q><i>You are not your resume, you are your work.</q> -Seth Godin, Author</p> </i>
 </section>
-
+<section id="programs"> 
+  <u>Program Experience</u>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>Applicant Tracking Systems</li>
+    <li>Microsoft Office</li>
+  </ul>
+</section>
+<br></br>
+<section id="resume">
+  <u>Resume</u>
+  <p>
+    /*FIX RESUME LINK*/
+  <a href="https://drive.google.com/file/d/1ElvrhaRmY_LMVDyxUHKhH3cMXaVLL0oF/view?usp=drivesdk">Click to view</a></p>
+</section>
+<br></br>
 <section id="contact"> <u>Contact Information</u>
 <br></br>
     <p ><a id="profile-link" class="contact-link" target="_blank" href="https://www.freecodecamp.org/jcampisi">Free Coding Camp</a></p>
@@ -166,43 +215,11 @@ a:hover{
   
   </section>
 </div>
-    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
-
-  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
-      <script id="rendered-js" >
-// !! IMPORTANT README:
-
-// You may add additional external JS and CSS as needed to complete the project, however the current external resource MUST remain in place for the tests to work. BABEL must also be left in place. 
-
-/***********
-INSTRUCTIONS:
-  - Select the project you would 
-    like to complete from the dropdown 
-    menu.
-  - Click the "RUN TESTS" button to
-    run the tests against the blank 
-    pen.
-  - Click the "TESTS" button to see 
-    the individual test cases. 
-    (should all be failing at first)
-  - Start coding! As you fulfill each
-    test case, you will see them go   
-    from red to green.
-  - As you start to build out your 
-    project, when tests are failing, 
-    you should get helpful errors 
-    along the way!
-    ************/
-
-// PLEASE NOTE: Adding global style rules using the * selector, or by adding rules to body {..} or html {..}, or to all elements within body or html, i.e. h1 {..}, has the potential to pollute the test suite's CSS. Try adding: * { color: red }, for a quick example!
-
-// Once you have read the above messages, you can delete all comments.
-//# sourceURL=pen.js
-    </script>
-
+</body>
   
-
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script  src="https://cdpn.io/cp/internal/boomboom/pen.js?key=pen.js-a5bc575a-3bb5-8971-9e8f-e4b4a622866e" crossorigin></script>
 </body>
 
 </html>
- 
